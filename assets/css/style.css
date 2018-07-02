@@ -1,0 +1,334 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 247, 247);
+}
+
+#container header {
+    width: 100%;
+    margin-top: 0; 
+}
+
+header {
+    background: url(http://crevisio.com/images/posts/190/RnOwyS0xt/Crevisio-190-RnOwyS0xt.jpg)no-repeat;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;  
+}
+
+.butterfly {
+    height: 30px;
+    width: 45px;
+} 
+
+header h1 {
+    font-size: 30px;
+    color:#000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-left: 25px; 
+}
+
+header h1 img:hover {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+nav {
+    float:right;
+}
+    
+nav ul {
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+nav li  {
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: 20px;
+    padding-top: 16px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.images {
+    margin: 140px 0px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-image: url(http://crevisio.com/images/posts/190/RnOwyS0xt/Crevisio-190-RnOwyS0xt.jpg);
+}
+
+.mariah {
+    
+    height: 495px;
+    width: 400px;
+    position: relative;
+    perspective: 500px;
+}
+
+.mariah:hover .pic1-front {
+    transform: rotateY(180deg);
+}
+
+.mariah:hover .pic1-back {
+    transform: rotateY(0deg);
+}
+
+.pic1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 40;
+    background-image: url(https://i.pinimg.com/originals/80/4a/da/804ada7b3da231bbac5fb7fd9474a668.jpg);
+    backface-visibility: hidden;
+    transition: 0.5s ease-in-out;  
+}
+
+.pic1-back {
+    transform: rotateY(-180deg);
+}
+
+.mariah2 {
+    height: 495px;
+    width: 400px;
+    position: relative;
+    perspective: 500px;
+}
+
+.mariah2:hover .pic2-front {
+    transform: rotateX(-180deg);
+}
+
+.mariah2:hover .pic2-back {
+    transform: rotateX(0deg);
+}
+
+.pic2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 30;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIdE7OFGWei-BRsROE32juKUw92hiChhzaBK_NlC2R9eeWggJEWw);
+    backface-visibility: hidden;
+    transition: 0.5s ease-in-out; 
+}
+
+.pic2-back {
+    transform: rotateX(180deg);
+}
+
+.mariah3 {
+    height: 495px;
+    width: 400px;
+    position: relative;
+    perspective: 500px;  
+}
+
+.mariah3:hover .pic3-front {
+    transform: rotateY(-180deg);
+}
+
+.mariah3:hover .pic3-back {
+    transform: rotateY(0deg);
+}
+
+.pic3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 30;
+    background-image: url(https://i.pinimg.com/originals/16/d8/d2/16d8d253deb3694c3416d712cd4acf91.jpg);
+    backface-visibility: hidden;
+    transition: 0.5s;   
+}
+
+.pic3-back {
+    transform: rotateY(180deg);
+}
+
+#biography {
+    background-image: url(https://wallpaperdownload.xyz/wp-content/uploads/2017/01/1080-x-1920-wallpaper4.jpg);
+}
+
+.bio {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: rgb(0, 7, 102);
+}
+
+.el {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    float: left;
+    perspective: 500px;
+    
+}
+
+.box1 {
+    height: 450px;
+    width: 350px;
+    text-indent: 40px;
+    background-image: url(http://crevisio.com/images/posts/190/RnOwyS0xt/Crevisio-190-RnOwyS0xt.jpg);
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 2em;
+    margin-left: -1310;
+    margin-right: auto;
+    margin-top: 165px;
+    padding: 30px;
+    box-shadow: 10px 10px 8px #888888;   
+}
+
+.box2 {
+    height: 450px;
+    width: 350px;
+    background-image: url(http://crevisio.com/images/posts/190/RnOwyS0xt/Crevisio-190-RnOwyS0xt.jpg);
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 2em;
+    padding:30px;
+    margin-left: -885;
+    margin-right: auto;  
+    margin-top: 165px;
+    box-shadow: 10px 10px 8px #888888; 
+}
+
+.box3 {
+    height: 450px;
+    width: 350px;
+    background-image: url(http://crevisio.com/images/posts/190/RnOwyS0xt/Crevisio-190-RnOwyS0xt.jpg);
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 2em;
+    padding:30px;
+     margin-left: -460;
+    margin-right: auto;
+    margin-top: 165px;
+    box-shadow: 10px 10px 8px #888888; 
+}
+
+#listItems  {
+    background-image: url(https://www.desktopbackground.org/download/1680x1050/2012/12/04/493684_wallpapers-abercrombie-digital-blasphemy-d-highland-spring-free_1680x1050_h.jpg);
+    height: 1000px;
+}
+
+.numberOnes {
+    float: left;
+    padding-top: 300px;
+    border: none;
+    font-size: 30px;
+    color: black;
+    background-color: none ;
+}
+
+.record {
+    grid-template-columns: 1fr 1fr 1fr;
+    float: left;    
+} 
+    
+.firstEra {
+    height: 200px;
+    width: 200px;
+    line-height: 2em;
+    background-image: url(http://crevisio.com/images/posts/139/ijIqOgkVb/Crevisio-139-ijIqOgkVb.jpg);
+    padding: 50px 50px 50px 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 250px 50px 0px 50px;
+    opacity: 0.3;
+    box-shadow: 10px 10px 8px #202020;
+    border-radius: 50%;
+}
+
+.secondEra {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    line-height: 2em;
+    background-image: url(http://crevisio.com/images/posts/139/ijIqOgkVb/Crevisio-139-ijIqOgkVb.jpg);
+    padding: 50px 50px 50px 50px;
+    margin: 250px 50px 0px 50px;
+    opacity: 0.3;
+    font-size: 14px;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 8px #202020;
+    border-radius: 50%;
+}
+
+.thirdEra {
+    height: 200px;
+    width: 200px;
+    line-height: 2em;
+    background-image: url(http://crevisio.com/images/posts/139/ijIqOgkVb/Crevisio-139-ijIqOgkVb.jpg);
+    padding: 50px 50px 50px 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 250px 50px 0px 50px;
+    opacity: 0.3;
+    box-shadow: 10px 10px 8px #202020;
+    border-radius: 50%;
+}
+
+.video {
+    
+    height: 450px;
+    padding: 100px 0px 0px 500px;
+    margin-right: auto;
+    background-image: url(http://crevisio.com/images/posts/190/RnOwyS0xt/Crevisio-190-RnOwyS0xt.jpg);
+}
+
+
+footer {
+    width: 100%;
+    background-color: #222;
+    padding: 27px 0px;
+
+}
+
