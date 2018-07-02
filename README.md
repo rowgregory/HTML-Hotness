@@ -1,1 +1,1 @@
-# Prework assignment number eight called HTML Hotness. Assignment had us a design a web page for our favorite musical artis.
+# Prework assignment number eight called HTML Hotness. The assignment had us design a web page for our favorite musical artist.
